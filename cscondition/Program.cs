@@ -12,7 +12,7 @@ namespace cscondition
         {
             Console.Write("숫자 입력 : ");
             int input = int.Parse(Console.ReadLine());
-            
+
             /*
             if(input % 2 == 0)
             {
@@ -23,6 +23,7 @@ namespace cscondition
             }
             */
 
+            /*
             switch (input % 2)
             {
                 case 0:
@@ -32,6 +33,10 @@ namespace cscondition
                     Console.WriteLine("홀수입니다");
                     break;
             }
+            */
+
+            Console.WriteLine(input % 2 == 0 ? "짝수" : "홀수");
+            Console.WriteLine(input > 0 ? "자연수입니다" : "자연수가 아닙니다");
 
             // 현재 시간 구하기
             Console.WriteLine(DateTime.Now.Year);
